@@ -2,7 +2,7 @@
 
 #Function to checked email validation
 function emailValidation() {
-	EMAIL_PATTERN="^([a-z]{1,}[0-9a-z]{0,}[@]{1}[a-z]{1,})"
+	EMAIL_PATTERN="^([a-z]{1,}[0-9a-z]{0,}[@]{1}[a-z]{1,}[.]{1}[a-z]{2,})"
 	read -p "Enter Email Id : " emailId
 	if [[ $emailId =~ $EMAIL_PATTERN ]]
 	then
